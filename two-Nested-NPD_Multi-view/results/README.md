@@ -1,0 +1,1 @@
+Results obtained on the FDDB database of the two-Nested-NPD and the OpenCV Viola-Jones face detectors. In collage_ok_.jpg Green boxes are detections by the two-nested-NPD face detector, blue ellipses (dotted line) are detections by Viola-Jones face detector and red ellipses (continuous line) are ground truth annotations.
