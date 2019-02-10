@@ -24,7 +24,7 @@ make
 
 In build directory run: ./main 
 
-You can change the default video-input device at line 6 in main.cpp file.
+You can change the default video-input device at line 6 in ./two-Nested-NPD_Multi-view/main.cpp file.
 
 ## Demo Video
 
