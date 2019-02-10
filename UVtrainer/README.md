@@ -3,5 +3,5 @@ UVtrainer builds a nested cascade classifier and outputs an XML file with the cl
 
 ## Video Preview
 
-[![Watch the video](https://github.com/roggerfq/UVtrainer/blob/master/UVtrainer/img/UVtrainer_demo.png)](https://drive.google.com/file/d/1Wy_OipV4EqcMeO06xOIsNTFwQ1gZfk2J/view?usp=sharing)
+[![Watch the video](https://github.com/roggerfq/multiview-npd/blob/master/UVtrainer/img/UVtrainer_demo.png)](https://drive.google.com/file/d/1Wy_OipV4EqcMeO06xOIsNTFwQ1gZfk2J/view?usp=sharing)
 
