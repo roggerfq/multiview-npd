@@ -28,10 +28,9 @@ You can change the default video-input device at line 6 in ./two-Nested-NPD_Mult
 
 ## Demo Video
 
+[![Watch the video](https://github.com/roggerfq/multiview-npd/blob/master/two-Nested-NPD_Multi-view/results/face_detection_demo.png)](https://drive.google.com/file/d/1rTnx-kSE7PPMJmGL6viTbBOAIFw_fCLg/view?usp=sharing)
 
 [![Watch the video](https://github.com/roggerfq/multiview-npd/blob/master/two-Nested-NPD_Multi-view/results/face_detection_demo2.png)](https://drive.google.com/file/d/1GuJcBtAORBlL9zhwW_QV4xt0-nzQSJ59/view?usp=sharing)
-
-[![Watch the video](https://github.com/roggerfq/multiview-npd/blob/master/two-Nested-NPD_Multi-view/results/face_detection_demo.png)](https://drive.google.com/file/d/1rTnx-kSE7PPMJmGL6viTbBOAIFw_fCLg/view?usp=sharing)
 
 ## License
 
