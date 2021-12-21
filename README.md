@@ -1,6 +1,6 @@
 # TWO NESTED CASCADE CLASSIFIERS FOR REAL-TIME MULTI-VIEW FACE DETECTION IN UNCONSTRAINED REAL-WORLD CONDITIONS
 
-This program load a nested classification cascade (XML file) constructed by [UVtrainer](https://github.com/roggerfq/multiview-npd/tree/master/UVtrainer) and performs face detection on faces with pose changes between [-90º, 90º] ROP (rotation-off-plane).
+This program loads a cascade of nested classifiers (XML file) constructed by [UVtrainer](https://github.com/roggerfq/multiview-npd/tree/master/UVtrainer). Then, the algorithm can detect faces with pose changes between [-90º, 90º] CROP (rotation-off-plane).
 
 ## Prerequisites
 
