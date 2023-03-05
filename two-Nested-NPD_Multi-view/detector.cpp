@@ -766,11 +766,11 @@ imageGray=ImageBackground(cv::Range(zsBackground,zsBackground+image.rows),cv::Ra
 szImg=image.size();
 }
 
-cvtColor(image,imageGray,CV_BGR2GRAY);//Convirtiendo a escala de grises
+cvtColor(image,imageGray,cv::COLOR_BGR2GRAY);//Convirtiendo a escala de grises
 
 
 if(flagActivateSkinColor){
-cvtColor(image,hsv, CV_BGR2HSV);
+cvtColor(image,hsv, cv::COLOR_BGR2HSV);
 inRange(hsv,hsvMin,hsvMax, bw);
 integral(bw,integralBw,CV_32S);
 }
@@ -910,7 +910,7 @@ imageGray=ImageBackground(cv::Range(zsBackground,zsBackground+image.rows),cv::Ra
 szImg=image.size();
 }
 
-cvtColor(image,imageGray,CV_BGR2GRAY);//Convirtiendo a escala de grises
+cvtColor(image,imageGray,cv::COLOR_BGR2GRAY);//Convirtiendo a escala de grises
 
 
 
@@ -1131,11 +1131,11 @@ imageGray=ImageBackground(cv::Range(zsBackground,zsBackground+image.rows),cv::Ra
 szImg=image.size();
 }
 
-cvtColor(image,imageGray,CV_BGR2GRAY);//Convirtiendo a escala de grises
+cvtColor(image,imageGray,cv::COLOR_BGR2GRAY);//Convirtiendo a escala de grises
 
 
 if(flagActivateSkinColor){
-cvtColor(image,hsv, CV_BGR2HSV);
+cvtColor(image,hsv, cv::COLOR_BGR2HSV);
 inRange(hsv,hsvMin,hsvMax, bw);
 integral(bw,integralBw,CV_32S);
 }
@@ -1393,7 +1393,7 @@ void CASCADE_CLASSIFIERS_EVALUATION::detectObjectRectanglesRotatedGrouped(cv::Ma
 {
 
 
-cvtColor(image,imageGray,CV_BGR2GRAY);//Convirtiendo a escala de grises
+cvtColor(image,imageGray,cv::COLOR_BGR2GRAY);//Convirtiendo a escala de grises
 
 
 
@@ -1685,11 +1685,11 @@ imageGray=ImageBackground(cv::Range(zsBackground,zsBackground+image.rows),cv::Ra
 szImg=image.size();
 }
 
-cvtColor(image,imageGray,CV_BGR2GRAY);//Convirtiendo a escala de grises
+cvtColor(image,imageGray,cv::COLOR_BGR2GRAY);//Convirtiendo a escala de grises
 
 
 if(flagActivateSkinColor){
-cvtColor(image,hsv, CV_BGR2HSV);
+cvtColor(image,hsv, cv::COLOR_BGR2HSV);
 inRange(hsv,hsvMin,hsvMax, bw);
 integral(bw,integralBw,CV_32S);
 }
