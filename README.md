@@ -1,42 +1,70 @@
-# TWO NESTED CASCADE CLASSIFIERS FOR REAL-TIME MULTI-VIEW FACE DETECTION IN UNCONSTRAINED REAL-WORLD CONDITIONS
+# Two Nested Cascade Classifiers for Real-Time Multi-View Face Detection in Unconstrained Environments
 
-This program loads a cascade of nested classifiers (XML file) constructed by [UVtrainer](https://github.com/roggerfq/UVtrainer). Then, the algorithm can detect faces with pose changes between [-90º, 90º] CROP (rotation-off-plane).
+This project implements a real-time multi-view face detection system based on a cascade of **nested classifiers** stored in an XML file. The classifier is trained using [UVtrainer](https://github.com/roggerfq/UVtrainer).
+
+The system is designed to robustly detect faces under significant pose variations, covering out-of-plane rotations in the range of **[-90°, 90°]**, making it suitable for unconstrained real-world scenarios.
+
+---
 
 ## Prerequisites
 
-OpenCV >= 2.4
+- OpenCV **>= 2.4**
+- CMake **>= 2.8**
+- A C++ compiler compatible with your OpenCV version
 
-CMake version >= 2.8
+---
 
-### Compilation
+## Compilation
 
+From the project root directory:
+
+```bash
 cd two-Nested-NPD_Multi-view
-
 mkdir build
-
 cd build
-
 cmake ..
-
 make
+```
 
-### Getting Started
+---
 
-In build directory run: ./main 
+## Getting Started
 
-You can change the default video-input device at line 6 in ./two-Nested-NPD_Multi-view/main.cpp file.
+After successful compilation, run the application from the `build` directory:
 
-## Demo Video
+```bash
+./main
+```
 
-[![Watch the video](https://github.com/roggerfq/multiview-npd/blob/master/two-Nested-NPD_Multi-view/results/face_detection_demo.png)](https://www.youtube.com/watch?v=sSboyjU7WUc)
+To change the default video input device, modify **line 6** in the following file:
 
-[![Watch the video](https://github.com/roggerfq/multiview-npd/blob/master/two-Nested-NPD_Multi-view/results/face_detection_demo2.png)](https://www.youtube.com/watch?v=CRdJJsVQ7cc)
+```
+two-Nested-NPD_Multi-view/main.cpp
+```
+
+---
+
+## Demo Videos
+
+Click on the images below to watch the demo videos:
+
+[![Face Detection Demo 1](https://github.com/roggerfq/multiview-npd/blob/master/two-Nested-NPD_Multi-view/results/face_detection_demo.png)](https://www.youtube.com/watch?v=sSboyjU7WUc)
+
+[![Face Detection Demo 2](https://github.com/roggerfq/multiview-npd/blob/master/two-Nested-NPD_Multi-view/results/face_detection_demo2.png)](https://www.youtube.com/watch?v=CRdJJsVQ7cc)
+
+---
 
 ## License
 
-This project is licensed under the MIT License
+This project is licensed under the **MIT License**.
+
+---
 
 ## Acknowledgments
-* Program FORMACIÓN E INNOVACIÓN PARA EL FORTALECIMIENTO DE LA COMPETITIVIDAD DEL SECTOR TIC DE LA REGIÓN: FORMATIC E INNOVATIC VALLE DEL CAUCA, OCCIDENTE supported by InfiValle, Gobernación del Valle del Cauca, and PacifiTIC.
-* NVIDIA Corporation
-* Comisión Fulbright Colombia
+
+This work was supported by:
+
+- **FORMACIÓN E INNOVACIÓN PARA EL FORTALECIMIENTO DE LA COMPETITIVIDAD DEL SECTOR TIC DE LA REGIÓN**  
+  (FORMATIC e INNOVATIC Valle del Cauca, Occidente), supported by **InfiValle**, **Gobernación del Valle del Cauca**, and **PacifiTIC**
+- **NVIDIA Corporation**
+- **Comisión Fulbright Colombia**
