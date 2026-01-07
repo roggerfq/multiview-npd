@@ -1,10 +1,14 @@
 # Two Nested Cascade Classifiers for Real-Time Multi-View Face Detection in Unconstrained Environments
 
-This project implements a real-time multi-view face detection system based on a cascade of **nested classifiers** stored in an XML file. The classifier is trained using [UVtrainer](https://github.com/roggerfq/UVtrainer).
+This repository implements a **real-time multi-view face detection system** based on the work presented in [1].
 
-The system is designed to robustly detect faces under significant pose variations, covering out-of-plane rotations in the range of **[-90°, 90°]**, making it suitable for unconstrained real-world scenarios.
+To train the detector, we designed a dedicated training framework called **[UVtrainer](https://github.com/roggerfq/UVtrainer)**, which enables the training of generic object detectors in a flexible and efficient manner.
 
----
+After training, **UVtrainer** generates an **XML model file**, which is then loaded by the detection algorithm implemented in this repository.
+
+Unlike the original work, this system was specifically designed to achieve **robust face detection under large pose variations**, supporting **out-of-plane rotations in the range of [-90°, 90°]**. This makes the approach suitable for **unconstrained real-world scenarios**, such as surveillance, access control, and human–computer interaction.
+
+Quantitative performance metrics and additional experimental results can be found in the **Results** section of **[UVface](https://github.com/roggerfq/UVface)**.
 
 ## Prerequisites
 
@@ -54,9 +58,14 @@ Click on the images below to watch the demo videos:
 
 ---
 
-## License
+## Author
+Roger Figueroa Quintero - [LinkedIn Profile](https://www.linkedin.com/in/roger-figueroa-quintero/)
 
-This project is licensed under the **MIT License**.
+---
+
+## License
+This project is licensed under the [MIT License](LICENSE.md), allowing unrestricted use, modification, and distribution under the terms of the license.
+
 
 ---
 
@@ -68,3 +77,7 @@ This work was supported by:
   (FORMATIC e INNOVATIC Valle del Cauca, Occidente), supported by **InfiValle**, **Gobernación del Valle del Cauca**, and **PacifiTIC**
 - **NVIDIA Corporation**
 - **Comisión Fulbright Colombia**
+
+## References
+
+[1] S. Liao, A. K. Jain, and S. Z. Li, "A fast and accurate unconstrained face detector," *IEEE Trans. Pattern Anal. Mach. Intell.*, vol. 38, no. 2, pp. 211-223, 2015.
