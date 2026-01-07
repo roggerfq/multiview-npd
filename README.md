@@ -6,7 +6,7 @@ To train the detector, we designed a dedicated training framework called **[UVtr
 
 After training, **UVtrainer** generates an **XML model file**, which is then loaded by the detection algorithm implemented in this repository.
 
-Unlike the original work, this implementation was specifically designed to achieve robust face detection under large in-plane rotations in the range of [-90°, 90°].
+Unlike the original work, this implementation was specifically designed to achieve robust face detection under large in-plane rotations in the range of **[-90°, 90°]**.
 
 Quantitative performance metrics and additional experimental results can be found in the **Results** section of **[UVface](https://github.com/roggerfq/UVface)**.
 
